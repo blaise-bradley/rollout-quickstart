@@ -1,4 +1,4 @@
-curl --location --request POST 'https://app.rollouthq.com/api/trigger-event' \
+curl --location --request POST 'https://api.rollouthq.com/trigger-event' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <ROLLOUT_TOKEN>' \
 --data-raw '{

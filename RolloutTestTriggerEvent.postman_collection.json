@@ -1,0 +1,49 @@
+{
+  "info": {
+    "_postman_id": "512f40a8-378a-4d0c-94a1-4e518cdbecb2",
+    "name": "Rollout Public",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14136835"
+  },
+  "item": [
+    {
+      "name": "https://api.rollouthq.com/trigger-event",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "<ROLLOUT_TOKEN>",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"triggerKey\": \"test_trigger\",\n  \"payload\": {\n    \"field_1\": \"Hello!!\"\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.rollouthq.com/trigger-event",
+          "protocol": "https",
+          "host": ["api", "rollouthq", "com"],
+          "path": ["trigger-event"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

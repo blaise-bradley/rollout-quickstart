@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rollout demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <! --Copy and paste the code below to embed in your app -->
+    <div id="rollout-container"></div>
+
+    <script src="https://unpkg.com/@rollouthq/connect-react-dist@latest"></script>
+    <script>
+      const token = "<ROLLOUT_TOKEN>"
+      const container = document.getElementById("rollout-container");
+      window.Rollout.defaultTheme();
+      // Replace with a test token from your account here
+      const ro = window.Rollout.init({ token });
+      ro.renderAutomationsManager(container);
+    </script>
+    <! --Copy and paste the code above to embed in your app -->
+  </body>
+</html>
